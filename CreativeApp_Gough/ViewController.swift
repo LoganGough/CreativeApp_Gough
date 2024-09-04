@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var ageField: UITextField!
     
+    @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var rankLabel: UILabel!
     
@@ -50,35 +51,48 @@ class ViewController: UIViewController {
             rankLabel.text = "PLEASE ENTER AGE"
         }
         
+        if(frog < 0){
+            rankLabel.text = "error"
+            view.backgroundColor = UIColor.white
+            imageView.image = UIImage(named: "white")
+
+            
+        }
         
-        
-        if(frog < 120){
+        else if(frog < 120){
             rankLabel.text = "Your a CHAMPION"
             view.backgroundColor = UIColor.purple
+            imageView.image = UIImage(named: "champion2")
         }
         else if(frog >= 120 && frog < 140){
             rankLabel.text = "Your in diamond"
             view.backgroundColor = UIColor.blue
+            imageView.image = UIImage(named: "diamond2")
         }
         else if(frog >= 140 && frog < 160){
             rankLabel.text = "Your in gold"
             view.backgroundColor = UIColor.yellow
+            imageView.image = UIImage(named: "gold2")
         }
         else if(frog >= 160 && frog < 180){
             rankLabel.text = "your in silver"
             view.backgroundColor = UIColor.gray
+            imageView.image = UIImage(named: "silver2")
         }
         else if(frog >= 180 && frog < 200){
             rankLabel.text = "your in bronze"
             view.backgroundColor = UIColor.brown
+            imageView.image = UIImage(named: "bronze2")
         }
         else if(frog == 0){
             rankLabel.text = "Your unranked"
             view.backgroundColor = UIColor.black
+            imageView.image = UIImage(named: "white")
         }
         else{
             rankLabel.text = "Your unranked"
             view.backgroundColor = UIColor.white
+            imageView.image = UIImage(named: "white")
         }
         
          if(cat == 0){

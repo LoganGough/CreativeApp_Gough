@@ -81,12 +81,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gHv-hK-nG5">
+                                <rect key="frame" x="81" y="648" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="ageField" destination="MH5-Nm-Ob3" id="KdV-1W-bJ8"/>
+                        <outlet property="imageView" destination="gHv-hK-nG5" id="kpC-xl-UB7"/>
                         <outlet property="rankLabel" destination="1dZ-1k-lIx" id="DOd-6y-PD1"/>
                         <outlet property="scoreField" destination="fle-h8-Rb4" id="IqR-OL-98O"/>
                     </connections>
